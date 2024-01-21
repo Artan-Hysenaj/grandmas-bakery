@@ -3,15 +3,10 @@
 /* SPDX-License-Identifier: MIT */
 
 import { createElement } from "react";
-import {
-  createBrowserRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
-import { MainLayout } from "./Layout";
-import { RootError } from "./Error";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { publicRoutes } from "@/screens/Public/Router";
-
+import { userRoutes } from "@/screens/User/Router";
+import { adminRoutes } from "@/screens/Admin/Router";
 
 // check whether a route is public or not
 export function isPublic(path: string): boolean {
@@ -20,17 +15,8 @@ export function isPublic(path: string): boolean {
 
 export const router = createBrowserRouter([
   ...publicRoutes,
-  {
-    path: "",
-    element: <MainLayout />,
-    errorElement: <RootError />,
-    children: [
-      { index: true, element: <Navigate to="/dashboard" replace /> },
-      //   { path: "dashboard", lazy: () => import("./dashboard") },
-      //   { path: "tasks", lazy: () => import("./tasks") },
-      //   { path: "messages", lazy: () => import("./messages") },
-    ],
-  },
+  ...userRoutes,
+  ...adminRoutes,
 ]);
 
 function Router(): JSX.Element {
