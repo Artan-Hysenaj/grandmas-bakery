@@ -37,7 +37,7 @@ export const Component = function CakesList(): JSX.Element {
         <br />
         <ul className="flex gap-4">
           {DUMMY_CAKES.map((cake) => (
-            <li className="w-full">
+            <li key={cake.id} className="w-full">
               <Card>
                 <CardHeader>
                   <div className="rounded overflow-hidden">
@@ -71,7 +71,7 @@ export const Component = function CakesList(): JSX.Element {
         <br />
         <ul className="flex flex-col gap-4">
           {DUMMY_CAKES.map((cake) => (
-            <li className="w-full">
+            <li key={cake.id} className="w-full">
               <Card>
                 <CardHeader>
                   <div className="rounded overflow-hidden">
