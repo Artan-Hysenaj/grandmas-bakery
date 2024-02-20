@@ -1,31 +1,37 @@
-# React + TypeScript + Vite
+## Installation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Clone the repository
+   ```git clone #repo#```
+2. Install dependencies
+    ```npm install```
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Start the development server ```npm run dev```
+2. Build for production ```npm run build```
 
-## Expanding the ESLint configuration
+## Libraries and frameworks used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- Antd
+- tanstack/react-query
+- react-highlight-words
 
-- Configure the top-level `parserOptions` property like this:
+## Structure 
+###### described by ChatGPT
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# grandmas-bakery
+- The `src` directory is where the main source code of the application lives.
+- Inside src, the `api` directory contains code related to the application's backend and networking.
+- The `assets` directory contains images and other assets used by the application.
+- The `components` directory contains reusable components that can be used throughout the application.
+- The `lib` directory contains helper functions that are used throughout the application.
+- The `hooks` directory contains custom React hooks that are used throughout the application.
+- The `i18n` directory contains code related to internationalization.
+- The `navigation` directory contains code related to routing and navigation.
+- The `screens` directory contains code for the different screens or pages of the application.
+- The `store` directory contains code related to the application's state management.
+- The `styles` directory contains styles for the application.
+- The `types` directory contains TypeScript type definitions for the application.

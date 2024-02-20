@@ -1,0 +1,28 @@
+{
+	"tabWidth": 4,
+	"singleQuote": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"bracketSameLine": true,
+	"bracketSpacing": true,
+	"useTabs": true,
+	"trailingComma": "es5",
+	"printWidth": 120,
+	"importOrder": [
+		"^(react|clsx|dayjs|react-router-dom)$",
+		"antd",
+		"api",
+		"store",
+		"screens",
+		"components",
+		"hooks",
+		"helpers",
+		"lib",
+		"^[./]",
+		"constants",
+		"types|schemas|yup/lib/schema",
+		".css$|.json$|.png$|.jpg$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"importOrderCaseInsensitive": true
+}
