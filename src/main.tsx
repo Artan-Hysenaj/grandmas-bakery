@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom/client';
 import dayjs from 'dayjs';
 import React from 'react';
 
+import { Toaster } from '@/components/ui/toaster';
+
 import './index.css';
 
 dayjs.extend(relativeTime);
@@ -16,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
 		<QueryClientProvider client={queryClient}>
 			<Router />
+			<Toaster />
 			<ReactQueryDevtools initialIsOpen={false} />
 		</QueryClientProvider>
 	</React.StrictMode>

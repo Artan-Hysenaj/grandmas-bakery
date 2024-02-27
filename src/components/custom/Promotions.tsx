@@ -25,7 +25,7 @@ function Promotions(): JSX.Element {
 				plugins={[
 					Autoplay({
 						delay: 5000,
-						stopOnMouseEnter: true,
+						stopOnInteraction: true,
 					}),
 				]}>
 				<CarouselContent>
