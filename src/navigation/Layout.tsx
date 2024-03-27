@@ -16,15 +16,28 @@ export function MainLayout(): JSX.Element {
 	const bottomLayoutComponent = (
 		<div className="flex gap-10 fixed left-0 bottom-0 bg-gray-300 w-full p-4">
 			<span className="flex justify-between w-full max-w-40">
-				<Button size="icon" onClick={() => {}}>
+				<Button
+					size="icon"
+					onClick={() => {
+						console.log('minus');
+					}}>
 					<Minus />
 				</Button>
 				<span className="text-2xl">{1}</span>
-				<Button size="icon" onClick={() => {}}>
+				<Button
+					size="icon"
+					onClick={() => {
+						console.log('plus');
+					}}>
 					<Plus />
 				</Button>
 			</span>
-			<Button onClick={() => {}}>Add For 150 €</Button>
+			<Button
+				onClick={() => {
+					console.log('add');
+				}}>
+				Add For 150 €
+			</Button>
 		</div>
 	);
 	return (
