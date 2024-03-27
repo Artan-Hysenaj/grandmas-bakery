@@ -12,6 +12,7 @@ import { Toaster } from '@/components/ui/toaster';
 import './index.css';
 
 dayjs.extend(relativeTime);
+
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
