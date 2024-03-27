@@ -78,7 +78,7 @@ export function MainLayout(): JSX.Element {
 				<div className="hidden lg:flex justify-between items-center border-t pt-4 mt-8">
 					<div>
 						<p>Home Bakery</p>
-						<p>123-456-7890</p>
+						<p>045-500-500</p>
 					</div>
 					<div>
 						<p>1234 Main St</p>
